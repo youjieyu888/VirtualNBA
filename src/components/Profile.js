@@ -15,7 +15,7 @@ export class Profile extends Component {
             playerId,
             pts, reb, ast, pie,
         } = this.props.playerInfo
-        console.log(playerId)
+        // console.log(playerId)
         return (
             <div className="profile">
                 <div className="profile-entry player-name">{`${playerName}`}</div>

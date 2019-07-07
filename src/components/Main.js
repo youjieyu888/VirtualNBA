@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import nba from 'nba';
 import {Profile} from './Profile'
 import {ShotChart} from "./ShotChart"
+import {CountSlider} from "./CountSlider"
+import {Row, Col} from "antd"
+import {DataViewContainers} from './DataViewContainers'
+
 
 export class Main extends Component {
 
@@ -25,7 +29,7 @@ export class Main extends Component {
         return (
             <div className = "main">
                 <Profile playerInfo = {this.state.playerInfo}/>
-                <ShotChart playerId={this.state.playerId}/>
+                <DataViewContainers playerId={this.state.playerId}/>
             </div>
         );
     }
